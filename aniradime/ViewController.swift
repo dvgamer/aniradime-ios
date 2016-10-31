@@ -16,9 +16,15 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.title = "aniradime"
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.addTarget(self, action: #selector(ViewController.fetch), for: UIControlEvents.valueChanged)
+        
+        let imageView :UIImageView! = UIImageView(image: UIImage(named: "navbar_icon"))
+        self.navigationItem.titleView = imageView
+        // Remove navigationBar's 1px border
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.title = ""
 
         fetch()
     }
