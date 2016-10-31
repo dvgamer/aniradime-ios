@@ -30,8 +30,11 @@ class RadioCell: UITableViewCell {
         rect.size.height = self.radioTitleLabel.frame.height
         self.radioTitleLabel.frame = rect
         
-        let station: String? = self.radio.radioStation?.name
-        self.radioDescriptionLabel?.text = "配信元: " + station!
+        if self.radio.radioStation != nil {
+            let station: String! = self.radio.radioStation?.name
+            self.radioDescriptionLabel?.text = "配信元: " + station
+        }
+
         // Remove an already appeared image, which is recycled by UITableView
         self.radioThumbnailImageView.image = nil
         self.radioThumbnailImageView.pin_setImage(from: URL(string: radio.imageUrl), placeholderImage: nil)

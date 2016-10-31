@@ -12,7 +12,7 @@ import ObjectMapper
 
 class RadioModel: NSObject {
     
-    var radios:[Radio]? = []
+    var radios:[Radio]! = []
     
     func fetch(completionHandler handler: @escaping (NSError?) -> Void) {
         let url = "http://radio.rakuishi.com/api/v1/feeds?limit=100"
@@ -35,7 +35,7 @@ class RadioModel: NSObject {
     }
     
     func rowCount() -> Int {
-        return self.radios!.count
+        return self.radios.count
     }
     
     func radioAtIndexPath(_ indexPath: IndexPath) -> Radio? {
