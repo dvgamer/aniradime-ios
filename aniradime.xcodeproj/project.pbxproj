@@ -12,9 +12,11 @@
 		16FC60C51DC6AC8D00FD0A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */; };
 		16FC60C71DC6AC8D00FD0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C61DC6AC8D00FD0A36 /* Assets.xcassets */; };
 		16FC60CA1DC6AC8D00FD0A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */; };
+		39F0EE83967B0727E7C34347 /* Pods_aniradime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0036E927118E826A278073B7 /* Pods_aniradime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0036E927118E826A278073B7 /* Pods_aniradime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aniradime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC60BC1DC6AC8D00FD0A36 /* aniradime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aniradime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FC60C11DC6AC8D00FD0A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		16FC60C61DC6AC8D00FD0A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16FC60C91DC6AC8D00FD0A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16FC60CB1DC6AC8D00FD0A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247E6829F5E5E7D4320191C7 /* Pods-aniradime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aniradime.release.xcconfig"; path = "Pods/Target Support Files/Pods-aniradime/Pods-aniradime.release.xcconfig"; sourceTree = "<group>"; };
+		A25C60E3F35BF9BC1D74ACD5 /* Pods-aniradime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aniradime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aniradime/Pods-aniradime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F0EE83967B0727E7C34347 /* Pods_aniradime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00379BF29100580EC99CBEEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0036E927118E826A278073B7 /* Pods_aniradime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		16FC60B31DC6AC8D00FD0A36 = {
 			isa = PBXGroup;
 			children = (
 				16FC60BE1DC6AC8D00FD0A36 /* aniradime */,
 				16FC60BD1DC6AC8D00FD0A36 /* Products */,
+				9E53B1985C69FE91079B7CED /* Pods */,
+				00379BF29100580EC99CBEEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = aniradime;
 			sourceTree = "<group>";
 		};
+		9E53B1985C69FE91079B7CED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A25C60E3F35BF9BC1D74ACD5 /* Pods-aniradime.debug.xcconfig */,
+				247E6829F5E5E7D4320191C7 /* Pods-aniradime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16FC60CE1DC6AC8D00FD0A36 /* Build configuration list for PBXNativeTarget "aniradime" */;
 			buildPhases = (
+				54607D1C005CC6B2960947AA /* [CP] Check Pods Manifest.lock */,
 				16FC60B81DC6AC8D00FD0A36 /* Sources */,
 				16FC60B91DC6AC8D00FD0A36 /* Frameworks */,
 				16FC60BA1DC6AC8D00FD0A36 /* Resources */,
+				E64402279902E3FC714CE65D /* [CP] Embed Pods Frameworks */,
+				2294DFA09C42E37359D2D42D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2294DFA09C42E37359D2D42D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aniradime/Pods-aniradime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54607D1C005CC6B2960947AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E64402279902E3FC714CE65D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aniradime/Pods-aniradime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16FC60B81DC6AC8D00FD0A36 /* Sources */ = {
@@ -257,10 +332,12 @@
 		};
 		16FC60CF1DC6AC8D00FD0A36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A25C60E3F35BF9BC1D74ACD5 /* Pods-aniradime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CLLJ787FV4;
 				INFOPLIST_FILE = aniradime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuishi.aniradime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,10 +347,12 @@
 		};
 		16FC60D01DC6AC8D00FD0A36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247E6829F5E5E7D4320191C7 /* Pods-aniradime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CLLJ787FV4;
 				INFOPLIST_FILE = aniradime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuishi.aniradime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
