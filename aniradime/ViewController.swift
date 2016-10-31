@@ -63,7 +63,7 @@ class ViewController: UITableViewController {
             print(radio.url)
             let url = URL(string: radio.url)
             let viewController = SFSafariViewController(url: url!)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            present(viewController, animated: true)
         }
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
