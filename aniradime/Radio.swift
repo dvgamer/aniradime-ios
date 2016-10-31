@@ -18,6 +18,7 @@ class Radio: Mappable {
     var description: String = ""
     var publishedAt: NSDate? = nil
     var radioStationId: Int = -1
+    var radioStation: RadioStation? = nil
     
     required init?(map: Map) {
 
@@ -32,5 +33,24 @@ class Radio: Mappable {
         description     <- map["description"]
         publishedAt     <- map["published_at"]
         radioStationId  <- map["radio_station_id"]
+        radioStation    <- map["station"]
+    }
+}
+
+class RadioStation: Mappable {
+    
+    var id: Int = -1
+    var name: String = ""
+    var url: String = ""
+    
+    required init?(map: Map) {
+        
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        id      <- map["id"]
+        name    <- map["name"]
+        url     <- map["url"]
     }
 }
