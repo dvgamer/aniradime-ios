@@ -21,7 +21,7 @@ class RadioCell: UITableViewCell {
 
     }
 
-    func setRadio(radio: Radio) {
+    func setRadio(_ radio: Radio) {
         self.radio = radio
 
         self.radioTitleLabel?.text = self.radio.name

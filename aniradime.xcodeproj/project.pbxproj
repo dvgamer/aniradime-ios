@@ -133,6 +133,7 @@
 					16FC60BB1DC6AC8D00FD0A36 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = CLLJ787FV4;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};

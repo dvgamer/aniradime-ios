@@ -16,7 +16,7 @@ class Radio: Mappable {
     var url: String = ""
     var imageUrl: String = ""
     var description: String = ""
-    var publishedAt: NSDate? = nil
+    var publishedAt: Date? = nil
     var radioStationId: Int = -1
     var radioStation: RadioStation? = nil
     

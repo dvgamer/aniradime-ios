@@ -54,14 +54,14 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RadioCell", for: indexPath) as! RadioCell
-        if let radio = self.radioModel.radioAtIndexPath(indexPath: indexPath) {
-            cell.setRadio(radio: radio)
+        if let radio = self.radioModel.radioAtIndexPath(indexPath) {
+            cell.setRadio(radio)
         }
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let radio = self.radioModel.radioAtIndexPath(indexPath: indexPath) {
+        if let radio = self.radioModel.radioAtIndexPath(indexPath) {
             print(radio.url)
             let url = URL(string: radio.url)
             let viewController = SFSafariViewController(url: url!)

@@ -38,7 +38,7 @@ class RadioModel: NSObject {
         return self.radios!.count
     }
     
-    func radioAtIndexPath(indexPath: IndexPath) -> Radio? {
+    func radioAtIndexPath(_ indexPath: IndexPath) -> Radio? {
         if indexPath.row < self.radios!.count {
             return self.radios![indexPath.row]
         } else {
