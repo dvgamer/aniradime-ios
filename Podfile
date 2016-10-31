@@ -7,6 +7,7 @@ target 'aniradime' do
 
   # Pods for aniradime
   pod 'Alamofire'
+  pod 'AlamofireNetworkActivityIndicator'
   pod 'ObjectMapper'
   pod 'PINRemoteImage'
 end
