@@ -348,7 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A25C60E3F35BF9BC1D74ACD5 /* Pods-aniradime.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CLLJ787FV4;
 				INFOPLIST_FILE = aniradime/Info.plist;
@@ -364,7 +364,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 247E6829F5E5E7D4320191C7 /* Pods-aniradime.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CLLJ787FV4;
 				INFOPLIST_FILE = aniradime/Info.plist;

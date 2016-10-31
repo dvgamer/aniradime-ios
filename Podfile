@@ -8,4 +8,5 @@ target 'aniradime' do
   # Pods for aniradime
   pod 'Alamofire'
   pod 'ObjectMapper'
+  pod 'PINRemoteImage'
 end

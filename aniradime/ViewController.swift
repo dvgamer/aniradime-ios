@@ -46,10 +46,6 @@ class ViewController: UITableViewController {
         return self.radioModel.rowCount()
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 56.0
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RadioCell", for: indexPath) as! RadioCell
         if let radio = self.radioModel.radioAtIndexPath(indexPath: indexPath) {

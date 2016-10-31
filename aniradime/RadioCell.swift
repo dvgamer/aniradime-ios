@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import PINRemoteImage
 
 class RadioCell: UITableViewCell {
+    
+    @IBOutlet weak var radioTitleLabel: UILabel!
+    @IBOutlet weak var radioDescriptionLabel: UILabel!
+    @IBOutlet weak var radioThumbnailImageView: UIImageView!
     
     var radio: Radio!
 
@@ -18,7 +23,10 @@ class RadioCell: UITableViewCell {
 
     func setRadio(radio: Radio) {
         self.radio = radio
-        self.textLabel?.text = self.radio.name
-        self.detailTextLabel?.text = self.radio.description
+        self.radioTitleLabel?.text = self.radio.name
+        self.radioDescriptionLabel?.text = self.radio.description
+        // Remove an already appeared image, which is recycled by UITableView
+        self.radioThumbnailImageView.image = nil
+        self.radioThumbnailImageView.pin_setImage(from: URL(string: radio.imageUrl), placeholderImage: nil)
     }
 }
