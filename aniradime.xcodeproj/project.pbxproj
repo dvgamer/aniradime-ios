@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161C6B361DC6C80A007BACC6 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C6B351DC6C80A007BACC6 /* Radio.swift */; };
+		164573371DC6CC6F003B5E74 /* RadioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164573361DC6CC6F003B5E74 /* RadioModel.swift */; };
 		16FC60C01DC6AC8D00FD0A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */; };
 		16FC60C21DC6AC8D00FD0A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60C11DC6AC8D00FD0A36 /* ViewController.swift */; };
 		16FC60C51DC6AC8D00FD0A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		0036E927118E826A278073B7 /* Pods_aniradime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aniradime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		161C6B351DC6C80A007BACC6 /* Radio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
+		164573361DC6CC6F003B5E74 /* RadioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioModel.swift; sourceTree = "<group>"; };
 		16FC60BC1DC6AC8D00FD0A36 /* aniradime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aniradime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FC60C11DC6AC8D00FD0A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				16FC60C61DC6AC8D00FD0A36 /* Assets.xcassets */,
 				16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */,
 				16FC60CB1DC6AC8D00FD0A36 /* Info.plist */,
+				161C6B351DC6C80A007BACC6 /* Radio.swift */,
+				164573361DC6CC6F003B5E74 /* RadioModel.swift */,
 			);
 			path = aniradime;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			files = (
 				16FC60C21DC6AC8D00FD0A36 /* ViewController.swift in Sources */,
 				16FC60C01DC6AC8D00FD0A36 /* AppDelegate.swift in Sources */,
+				161C6B361DC6C80A007BACC6 /* Radio.swift in Sources */,
+				164573371DC6CC6F003B5E74 /* RadioModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
