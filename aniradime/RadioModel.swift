@@ -15,7 +15,7 @@ class RadioModel: NSObject {
     var radios:[Radio]? = []
     
     func fetch(completionHandler handler: @escaping (NSError?) -> Void) {
-        let url = "http://radio.rakuishi.com/api/v1/feeds"
+        let url = "http://radio.rakuishi.com/api/v1/feeds?limit=100"
         
         Alamofire.request(url)
             .validate()
@@ -30,7 +30,19 @@ class RadioModel: NSObject {
             }
     }
     
+    func sectionCount() -> Int {
+        return 1;
+    }
+    
     func rowCount() -> Int {
         return self.radios!.count
+    }
+    
+    func radioAtIndexPath(indexPath: IndexPath) -> Radio? {
+        if indexPath.row < self.radios!.count {
+            return self.radios![indexPath.row]
+        } else {
+            return nil
+        }
     }
 }
