@@ -31,7 +31,7 @@ class Radio: Mappable {
         url             <- map["url"]
         imageUrl        <- map["image_url"]
         description     <- map["description"]
-        publishedAt     <- map["published_at"]
+        publishedAt     <- (map["published_at"], ISO8601DateTransform())
         radioStationId  <- map["radio_station_id"]
         radioStation    <- map["station"]
     }
