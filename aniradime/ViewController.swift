@@ -66,7 +66,6 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let radio = self.feedModel.radioAtIndexPath(indexPath) {
-            print(radio.url)
             let url = URL(string: radio.url)
             let viewController = SFSafariViewController(url: url!)
             present(viewController, animated: true)
