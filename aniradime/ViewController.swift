@@ -15,30 +15,36 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         self.refreshControl = UIRefreshControl()
-        self.refreshControl?.addTarget(self, action: #selector(ViewController.fetch), for: UIControlEvents.valueChanged)
+        self.refreshControl?.addTarget(self, action: #selector(ViewController.pullRefreshControll), for: UIControlEvents.valueChanged)
         
         let imageView :UIImageView! = UIImageView(image: UIImage(named: "navbar_icon"))
         self.navigationItem.titleView = imageView
+
         // Remove navigationBar's 1px border
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.title = ""
 
-        fetch()
+        fetch(isFirstPage: true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func pullRefreshControll() {
+        fetch(isFirstPage: true)
+    }
 
-    func fetch() {
-        feedModel.fetch(completionHandler: { error -> Void in
-            // Reload UITableView ...
-            self.refreshControl?.endRefreshing()
-            self.tableView.reloadData()
+    func fetch(isFirstPage: Bool) {
+        self.feedModel.fetch(isFirstPage: isFirstPage, errorHandler: { error -> Void in
+            if error == nil {
+                self.refreshControl?.endRefreshing()
+                self.tableView.reloadData()
+            }
         })
     }
     
@@ -71,6 +77,12 @@ class ViewController: UITableViewController {
             present(viewController, animated: true)
         }
         self.tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height && self.feedModel.isAvailableToFetchNextPage() {
+            fetch(isFirstPage: false)
+        }
     }
 }
 
