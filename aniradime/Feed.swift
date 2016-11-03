@@ -9,6 +9,22 @@
 import Foundation
 import ObjectMapper
 
+class Feed: Mappable {
+    
+    var date: Date? = nil
+    var radios:[Radio]! = []
+    
+    required init?(map: Map) {
+        
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        date    <- (map["date"], ISO8601DateTransform())
+        radios  <- map["radios"]
+    }
+}
+
 class Radio: Mappable {
 
     var id: Int = -1

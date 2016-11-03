@@ -21,7 +21,7 @@ class RadioCell: UITableViewCell {
 
     override func awakeFromNib() {
         self.formatter = DateFormatter()
-        self.formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        self.formatter.dateFormat = "HH:mm"
     }
 
     func setRadio(_ radio: Radio) {
@@ -37,7 +37,7 @@ class RadioCell: UITableViewCell {
 
         if self.radio.radioStation != nil {
             let station: String! = self.radio.radioStation?.name
-            self.radioDescriptionLabel?.text = station
+            self.radioDescriptionLabel?.text = "配信元: " + station
         }
 
         // Remove an already appeared image, which is recycled by UITableView

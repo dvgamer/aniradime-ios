@@ -11,7 +11,7 @@ import SafariServices
 
 class ViewController: UITableViewController {
 
-    var radioModel:RadioModel = RadioModel()
+    var feedModel:FeedModel = FeedModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class ViewController: UITableViewController {
     }
 
     func fetch() {
-        radioModel.fetch(completionHandler: { error -> Void in
+        feedModel.fetch(completionHandler: { error -> Void in
             // Reload UITableView ...
             self.refreshControl?.endRefreshing()
             self.tableView.reloadData()
@@ -45,23 +45,27 @@ class ViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return self.radioModel.sectionCount()
+        return self.feedModel.sectionCount()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.radioModel.rowCount()
+        return self.feedModel.rowCount(section)
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.feedModel.sectionTitle(section)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RadioCell", for: indexPath) as! RadioCell
-        if let radio = self.radioModel.radioAtIndexPath(indexPath) {
+        if let radio = self.feedModel.radioAtIndexPath(indexPath) {
             cell.setRadio(radio)
         }
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let radio = self.radioModel.radioAtIndexPath(indexPath) {
+        if let radio = self.feedModel.radioAtIndexPath(indexPath) {
             print(radio.url)
             let url = URL(string: radio.url)
             let viewController = SFSafariViewController(url: url!)
