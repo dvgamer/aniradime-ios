@@ -21,6 +21,7 @@ class FeedModel: NSObject {
     override init() {
         self.formatter = DateFormatter()
         self.formatter.dateFormat = "yyyy/MM/dd"
+        self.formatter.timeZone = TimeZone(abbreviation: "UTC+09:00")!
     }
 
     func fetch(isFirstPage: Bool, errorHandler handler: @escaping (NSError?) -> Void) {
@@ -64,8 +65,11 @@ class FeedModel: NSObject {
     }
 
     func sectionTitle(_ section: Int) -> String {
+        var calendar = NSCalendar.current
+        calendar.timeZone = TimeZone(abbreviation: "UTC+09:00")!
+        
         let comp = Calendar.Component.weekday
-        let weekday = NSCalendar.current.component(comp, from: self.feeds![section].date!)
+        let weekday = calendar.component(comp, from: self.feeds![section].date!)
 
         return self.formatter.string(from: self.feeds![section].date!) + " " + self.formatter.shortWeekdaySymbols[weekday - 1];
     }
