@@ -11,6 +11,7 @@
 		164573371DC6CC6F003B5E74 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164573361DC6CC6F003B5E74 /* FeedModel.swift */; };
 		164573391DC6F151003B5E74 /* RadioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164573381DC6F151003B5E74 /* RadioCell.swift */; };
 		1645733B1DC73983003B5E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1645733A1DC73983003B5E74 /* Assets.xcassets */; };
+		16636DB71DCC7D5C00E9210F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16636DB61DCC7D5C00E9210F /* SettingsViewController.swift */; };
 		16FC60C01DC6AC8D00FD0A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */; };
 		16FC60C21DC6AC8D00FD0A36 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */; };
 		16FC60C51DC6AC8D00FD0A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		164573361DC6CC6F003B5E74 /* FeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		164573381DC6F151003B5E74 /* RadioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioCell.swift; sourceTree = "<group>"; };
 		1645733A1DC73983003B5E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16636DB61DCC7D5C00E9210F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		16FC60BC1DC6AC8D00FD0A36 /* aniradime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aniradime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				1645733A1DC73983003B5E74 /* Assets.xcassets */,
 				16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */,
 				16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */,
+				16636DB61DCC7D5C00E9210F /* SettingsViewController.swift */,
 				16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */,
 				16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */,
 				16FC60CB1DC6AC8D00FD0A36 /* Info.plist */,
@@ -232,6 +235,7 @@
 				164573391DC6F151003B5E74 /* RadioCell.swift in Sources */,
 				161C6B361DC6C80A007BACC6 /* Feed.swift in Sources */,
 				164573371DC6CC6F003B5E74 /* FeedModel.swift in Sources */,
+				16636DB71DCC7D5C00E9210F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
