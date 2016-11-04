@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireNetworkActivityIndicator
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NetworkActivityIndicatorManager.shared.startDelay = 0.0
         NetworkActivityIndicatorManager.shared.completionDelay = 0.2
 
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setCategory(AVAudioSessionCategoryPlayback)
+            try session.setActive(true)
+        } catch  {
+            print("Something is wrong about AVAudioSessionCategoryPlayback.")
+        }
+        
         return true
     }
 
