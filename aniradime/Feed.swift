@@ -1,5 +1,5 @@
 //
-//  Radio.swift
+//  Feed.swift
 //  aniradime
 //
 //  Created by rakuishi on 2016/10/31.
@@ -12,7 +12,7 @@ import ObjectMapper
 class Feed: Mappable {
     
     var date: Date? = nil
-    var radios:[Radio]! = []
+    var radios: [Radio]! = []
     
     required init?(map: Map) {
         

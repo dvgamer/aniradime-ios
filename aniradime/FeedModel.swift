@@ -1,5 +1,5 @@
 //
-//  RadioModel.swift
+//  FeedModel.swift
 //  aniradime
 //
 //  Created by rakuishi on 2016/10/31.

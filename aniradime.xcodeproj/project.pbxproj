@@ -12,7 +12,7 @@
 		164573391DC6F151003B5E74 /* RadioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164573381DC6F151003B5E74 /* RadioCell.swift */; };
 		1645733B1DC73983003B5E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1645733A1DC73983003B5E74 /* Assets.xcassets */; };
 		16FC60C01DC6AC8D00FD0A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */; };
-		16FC60C21DC6AC8D00FD0A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60C11DC6AC8D00FD0A36 /* ViewController.swift */; };
+		16FC60C21DC6AC8D00FD0A36 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */; };
 		16FC60C51DC6AC8D00FD0A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */; };
 		16FC60CA1DC6AC8D00FD0A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */; };
 		39F0EE83967B0727E7C34347 /* Pods_aniradime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0036E927118E826A278073B7 /* Pods_aniradime.framework */; };
@@ -26,7 +26,7 @@
 		1645733A1DC73983003B5E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16FC60BC1DC6AC8D00FD0A36 /* aniradime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aniradime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16FC60C11DC6AC8D00FD0A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		16FC60C41DC6AC8D00FD0A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16FC60C91DC6AC8D00FD0A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16FC60CB1DC6AC8D00FD0A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			children = (
 				1645733A1DC73983003B5E74 /* Assets.xcassets */,
 				16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */,
-				16FC60C11DC6AC8D00FD0A36 /* ViewController.swift */,
+				16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */,
 				16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */,
 				16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */,
 				16FC60CB1DC6AC8D00FD0A36 /* Info.plist */,
@@ -222,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16FC60C21DC6AC8D00FD0A36 /* ViewController.swift in Sources */,
+				16FC60C21DC6AC8D00FD0A36 /* FeedViewController.swift in Sources */,
 				16FC60C01DC6AC8D00FD0A36 /* AppDelegate.swift in Sources */,
 				164573391DC6F151003B5E74 /* RadioCell.swift in Sources */,
 				161C6B361DC6C80A007BACC6 /* Feed.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeedViewController.swift
 //  aniradime
 //
 //  Created by rakuishi on 2016/10/31.
@@ -9,15 +9,15 @@
 import UIKit
 import SafariServices
 
-class ViewController: UITableViewController {
+class FeedViewController: UITableViewController {
 
-    var feedModel:FeedModel = FeedModel()
+    var feedModel: FeedModel = FeedModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.refreshControl = UIRefreshControl()
-        self.refreshControl?.addTarget(self, action: #selector(ViewController.pullRefreshControll), for: UIControlEvents.valueChanged)
+        self.refreshControl?.addTarget(self, action: #selector(FeedViewController.pullRefreshControll), for: UIControlEvents.valueChanged)
         
         let imageView :UIImageView! = UIImageView(image: UIImage(named: "navbar_icon"))
         self.navigationItem.titleView = imageView
