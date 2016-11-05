@@ -9,9 +9,10 @@
 import UIKit
 import SafariServices
 
-class FeedViewController: UITableViewController {
+class FeedViewController: UITableViewController, NADViewDelegate {
 
     var feedModel: FeedModel = FeedModel()
+    var nadView: NADView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +27,22 @@ class FeedViewController: UITableViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.title = ""
+        
+        let bounds = UIScreen.main.bounds
+        let width = (bounds.size.width - 320.0) / 2.0
+        let height = bounds.size.height - 50.0
+        
+        self.nadView = NADView.init(frame: CGRect.init(x: width, y: height, width: 320.0, height: 50.0))
+        self.nadView.setNendID(Nend.ApiKey.rawValue, spotID: Nend.SpotID.rawValue)
+        self.nadView.load()
+        self.nadView.delegate = self
+        self.navigationController?.view.addSubview(self.nadView)
 
         fetch(isFirstPage: true)
+    }
+    
+    deinit {
+        self.nadView.delegate = nil
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,6 +98,10 @@ class FeedViewController: UITableViewController {
         if scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height && self.feedModel.isAvailableToFetchNextPage() {
             fetch(isFirstPage: false)
         }
+    }
+
+    func nadViewDidFinishLoad(_ adView: NADView!) {
+        // print("nadViewDidFinishLoad")
     }
 }
 
