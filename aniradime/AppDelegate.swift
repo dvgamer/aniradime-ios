@@ -26,9 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let session = AVAudioSession.sharedInstance()
         do {
             try session.setCategory(AVAudioSessionCategoryPlayback)
-            try session.setActive(true)
         } catch  {
-            print("Something is wrong about AVAudioSessionCategoryPlayback.")
+            print("Something is wrong about set up category.")
+        }
+        
+        do {
+            try session.setActive(true)
+        } catch {
+            print("Something is wrong about activating AVAudioSession.")
         }
         
         return true
