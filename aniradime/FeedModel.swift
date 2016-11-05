@@ -17,6 +17,7 @@ class FeedModel: NSObject {
     private var num: Int! = 1
     private var isLoading: Bool! = false
     private var hasNextPage: Bool! = false
+    private var request: DataRequest? = nil
 
     override init() {
         self.formatter = DateFormatter()
@@ -34,8 +35,11 @@ class FeedModel: NSObject {
         self.num = isFirstPage ? 1 : self.num + 1
         let url = "http://radio.rakuishi.com/api/v1/feeds?num=" + String(num)
 
-        // TODO: Cancell all requests before `Alamofire.request()`
-        Alamofire.request(url)
+        // Cancell previous request before `Alamofire.request()`
+        self.request?.cancel()
+        self.request = Alamofire.request(url)
+
+        self.request?
             .validate()
             .responseJSON { response in
                 if response.data != nil && response.result.error == nil {
