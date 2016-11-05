@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		0036E927118E826A278073B7 /* Pods_aniradime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aniradime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1616A6D81DCDDDF100ECBFDF /* NendAd-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NendAd-Bridging-Header.h"; sourceTree = "<group>"; };
+		1616A6D81DCDDDF100ECBFDF /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		1616A6DB1DCDDDF900ECBFDF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		1616A6DD1DCDDDFF00ECBFDF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		1616A6DF1DCDDE0D00ECBFDF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -169,7 +169,7 @@
 				1616A7281DCE242200ECBFDF /* models */,
 				1616A72B1DCE242200ECBFDF /* views */,
 				1616A7231DCE22AB00ECBFDF /* viewcontrollers */,
-				1616A6D81DCDDDF100ECBFDF /* NendAd-Bridging-Header.h */,
+				1616A6D81DCDDDF100ECBFDF /* BridgingHeader.h */,
 				1616A6E11DCDE06800ECBFDF /* Constant.swift */,
 				16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */,
 				16FC60CB1DC6AC8D00FD0A36 /* Info.plist */,
@@ -458,7 +458,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/aniradime/NendAd",
 					"$(PROJECT_DIR)/aniradime/vendors/NendAd",
 				);
 				OTHER_LDFLAGS = (
@@ -479,7 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuishi.aniradime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/NendAd-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -496,7 +495,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/aniradime/NendAd",
 					"$(PROJECT_DIR)/aniradime/vendors/NendAd",
 				);
 				OTHER_LDFLAGS = (
@@ -517,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuishi.aniradime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/NendAd-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
