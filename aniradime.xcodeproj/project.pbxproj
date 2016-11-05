@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1616A6D91DCDDDF100ECBFDF /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1616A6CB1DCDDDF100ECBFDF /* libNendAd.a */; };
-		1616A6DA1DCDDDF100ECBFDF /* NADView_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1616A6D71DCDDDF100ECBFDF /* NADView_readme.txt */; };
 		1616A6DC1DCDDDF900ECBFDF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1616A6DB1DCDDDF900ECBFDF /* AdSupport.framework */; };
 		1616A6DE1DCDDDFF00ECBFDF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1616A6DD1DCDDDFF00ECBFDF /* ImageIO.framework */; };
 		1616A6E01DCDDE0D00ECBFDF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1616A6DF1DCDDE0D00ECBFDF /* Security.framework */; };
 		1616A6E21DCDE06800ECBFDF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616A6E11DCDE06800ECBFDF /* Constant.swift */; };
-		161C6B361DC6C80A007BACC6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C6B351DC6C80A007BACC6 /* Feed.swift */; };
-		164573371DC6CC6F003B5E74 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164573361DC6CC6F003B5E74 /* FeedModel.swift */; };
-		164573391DC6F151003B5E74 /* RadioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164573381DC6F151003B5E74 /* RadioCell.swift */; };
+		1616A7261DCE22AB00ECBFDF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616A7241DCE22AB00ECBFDF /* FeedViewController.swift */; };
+		1616A7271DCE22AB00ECBFDF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616A7251DCE22AB00ECBFDF /* SettingsViewController.swift */; };
+		1616A72E1DCE242200ECBFDF /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616A7291DCE242200ECBFDF /* Feed.swift */; };
+		1616A72F1DCE242200ECBFDF /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616A72A1DCE242200ECBFDF /* FeedModel.swift */; };
+		1616A7301DCE242200ECBFDF /* LicenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616A72C1DCE242200ECBFDF /* LicenseCell.swift */; };
+		1616A7311DCE242200ECBFDF /* RadioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616A72D1DCE242200ECBFDF /* RadioCell.swift */; };
+		1616A7461DCE244C00ECBFDF /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1616A7391DCE244C00ECBFDF /* libNendAd.a */; };
+		1616A7471DCE244C00ECBFDF /* NADView_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1616A7451DCE244C00ECBFDF /* NADView_readme.txt */; };
 		1645733B1DC73983003B5E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1645733A1DC73983003B5E74 /* Assets.xcassets */; };
-		16636DB71DCC7D5C00E9210F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16636DB61DCC7D5C00E9210F /* SettingsViewController.swift */; };
-		16636DB91DCDA9A100E9210F /* LicenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16636DB81DCDA9A100E9210F /* LicenseCell.swift */; };
 		16FC60C01DC6AC8D00FD0A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */; };
-		16FC60C21DC6AC8D00FD0A36 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */; };
 		16FC60C51DC6AC8D00FD0A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */; };
 		16FC60CA1DC6AC8D00FD0A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */; };
 		39F0EE83967B0727E7C34347 /* Pods_aniradime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0036E927118E826A278073B7 /* Pods_aniradime.framework */; };
@@ -28,33 +28,33 @@
 
 /* Begin PBXFileReference section */
 		0036E927118E826A278073B7 /* Pods_aniradime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aniradime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1616A6CB1DCDDDF100ECBFDF /* libNendAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNendAd.a; sourceTree = "<group>"; };
-		1616A6CC1DCDDDF100ECBFDF /* NADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADInterstitial.h; sourceTree = "<group>"; };
-		1616A6CD1DCDDDF100ECBFDF /* NADNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNative.h; sourceTree = "<group>"; };
-		1616A6CE1DCDDDF100ECBFDF /* NADNativeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeClient.h; sourceTree = "<group>"; };
-		1616A6CF1DCDDDF100ECBFDF /* NADNativeError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeError.h; sourceTree = "<group>"; };
-		1616A6D01DCDDDF100ECBFDF /* NADNativeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeImageView.h; sourceTree = "<group>"; };
-		1616A6D11DCDDDF100ECBFDF /* NADNativeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeLabel.h; sourceTree = "<group>"; };
-		1616A6D21DCDDDF100ECBFDF /* NADNativeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeLogger.h; sourceTree = "<group>"; };
-		1616A6D31DCDDDF100ECBFDF /* NADNativeTableViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeTableViewHelper.h; sourceTree = "<group>"; };
-		1616A6D41DCDDDF100ECBFDF /* NADNativeTableViewPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeTableViewPlacement.h; sourceTree = "<group>"; };
-		1616A6D51DCDDDF100ECBFDF /* NADNativeViewRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeViewRendering.h; sourceTree = "<group>"; };
-		1616A6D61DCDDDF100ECBFDF /* NADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADView.h; sourceTree = "<group>"; };
-		1616A6D71DCDDDF100ECBFDF /* NADView_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NADView_readme.txt; sourceTree = "<group>"; };
 		1616A6D81DCDDDF100ECBFDF /* NendAd-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NendAd-Bridging-Header.h"; sourceTree = "<group>"; };
 		1616A6DB1DCDDDF900ECBFDF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		1616A6DD1DCDDDFF00ECBFDF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		1616A6DF1DCDDE0D00ECBFDF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1616A6E11DCDE06800ECBFDF /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		161C6B351DC6C80A007BACC6 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
-		164573361DC6CC6F003B5E74 /* FeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
-		164573381DC6F151003B5E74 /* RadioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioCell.swift; sourceTree = "<group>"; };
+		1616A7241DCE22AB00ECBFDF /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		1616A7251DCE22AB00ECBFDF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1616A7291DCE242200ECBFDF /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		1616A72A1DCE242200ECBFDF /* FeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		1616A72C1DCE242200ECBFDF /* LicenseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseCell.swift; sourceTree = "<group>"; };
+		1616A72D1DCE242200ECBFDF /* RadioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioCell.swift; sourceTree = "<group>"; };
+		1616A7391DCE244C00ECBFDF /* libNendAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNendAd.a; sourceTree = "<group>"; };
+		1616A73A1DCE244C00ECBFDF /* NADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADInterstitial.h; sourceTree = "<group>"; };
+		1616A73B1DCE244C00ECBFDF /* NADNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNative.h; sourceTree = "<group>"; };
+		1616A73C1DCE244C00ECBFDF /* NADNativeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeClient.h; sourceTree = "<group>"; };
+		1616A73D1DCE244C00ECBFDF /* NADNativeError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeError.h; sourceTree = "<group>"; };
+		1616A73E1DCE244C00ECBFDF /* NADNativeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeImageView.h; sourceTree = "<group>"; };
+		1616A73F1DCE244C00ECBFDF /* NADNativeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeLabel.h; sourceTree = "<group>"; };
+		1616A7401DCE244C00ECBFDF /* NADNativeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeLogger.h; sourceTree = "<group>"; };
+		1616A7411DCE244C00ECBFDF /* NADNativeTableViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeTableViewHelper.h; sourceTree = "<group>"; };
+		1616A7421DCE244C00ECBFDF /* NADNativeTableViewPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeTableViewPlacement.h; sourceTree = "<group>"; };
+		1616A7431DCE244C00ECBFDF /* NADNativeViewRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeViewRendering.h; sourceTree = "<group>"; };
+		1616A7441DCE244C00ECBFDF /* NADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADView.h; sourceTree = "<group>"; };
+		1616A7451DCE244C00ECBFDF /* NADView_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NADView_readme.txt; sourceTree = "<group>"; };
 		1645733A1DC73983003B5E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		16636DB61DCC7D5C00E9210F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		16636DB81DCDA9A100E9210F /* LicenseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseCell.swift; sourceTree = "<group>"; };
 		16FC60BC1DC6AC8D00FD0A36 /* aniradime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aniradime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		16FC60C41DC6AC8D00FD0A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16FC60C91DC6AC8D00FD0A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16FC60CB1DC6AC8D00FD0A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,9 +69,9 @@
 			files = (
 				1616A6E01DCDDE0D00ECBFDF /* Security.framework in Frameworks */,
 				1616A6DE1DCDDDFF00ECBFDF /* ImageIO.framework in Frameworks */,
+				1616A7461DCE244C00ECBFDF /* libNendAd.a in Frameworks */,
 				1616A6DC1DCDDDF900ECBFDF /* AdSupport.framework in Frameworks */,
 				39F0EE83967B0727E7C34347 /* Pods_aniradime.framework in Frameworks */,
-				1616A6D91DCDDDF100ECBFDF /* libNendAd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,22 +89,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1616A6CA1DCDDDF100ECBFDF /* NendAd */ = {
+		1616A7231DCE22AB00ECBFDF /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				1616A6CB1DCDDDF100ECBFDF /* libNendAd.a */,
-				1616A6CC1DCDDDF100ECBFDF /* NADInterstitial.h */,
-				1616A6CD1DCDDDF100ECBFDF /* NADNative.h */,
-				1616A6CE1DCDDDF100ECBFDF /* NADNativeClient.h */,
-				1616A6CF1DCDDDF100ECBFDF /* NADNativeError.h */,
-				1616A6D01DCDDDF100ECBFDF /* NADNativeImageView.h */,
-				1616A6D11DCDDDF100ECBFDF /* NADNativeLabel.h */,
-				1616A6D21DCDDDF100ECBFDF /* NADNativeLogger.h */,
-				1616A6D31DCDDDF100ECBFDF /* NADNativeTableViewHelper.h */,
-				1616A6D41DCDDDF100ECBFDF /* NADNativeTableViewPlacement.h */,
-				1616A6D51DCDDDF100ECBFDF /* NADNativeViewRendering.h */,
-				1616A6D61DCDDDF100ECBFDF /* NADView.h */,
-				1616A6D71DCDDDF100ECBFDF /* NADView_readme.txt */,
+				1616A7241DCE22AB00ECBFDF /* FeedViewController.swift */,
+				1616A7251DCE22AB00ECBFDF /* SettingsViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		1616A7281DCE242200ECBFDF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1616A7291DCE242200ECBFDF /* Feed.swift */,
+				1616A72A1DCE242200ECBFDF /* FeedModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		1616A72B1DCE242200ECBFDF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1616A72D1DCE242200ECBFDF /* RadioCell.swift */,
+				1616A72C1DCE242200ECBFDF /* LicenseCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1616A7371DCE244C00ECBFDF /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				1616A7381DCE244C00ECBFDF /* NendAd */,
+			);
+			path = vendors;
+			sourceTree = "<group>";
+		};
+		1616A7381DCE244C00ECBFDF /* NendAd */ = {
+			isa = PBXGroup;
+			children = (
+				1616A7391DCE244C00ECBFDF /* libNendAd.a */,
+				1616A73A1DCE244C00ECBFDF /* NADInterstitial.h */,
+				1616A73B1DCE244C00ECBFDF /* NADNative.h */,
+				1616A73C1DCE244C00ECBFDF /* NADNativeClient.h */,
+				1616A73D1DCE244C00ECBFDF /* NADNativeError.h */,
+				1616A73E1DCE244C00ECBFDF /* NADNativeImageView.h */,
+				1616A73F1DCE244C00ECBFDF /* NADNativeLabel.h */,
+				1616A7401DCE244C00ECBFDF /* NADNativeLogger.h */,
+				1616A7411DCE244C00ECBFDF /* NADNativeTableViewHelper.h */,
+				1616A7421DCE244C00ECBFDF /* NADNativeTableViewPlacement.h */,
+				1616A7431DCE244C00ECBFDF /* NADNativeViewRendering.h */,
+				1616A7441DCE244C00ECBFDF /* NADView.h */,
+				1616A7451DCE244C00ECBFDF /* NADView_readme.txt */,
 			);
 			path = NendAd;
 			sourceTree = "<group>";
@@ -130,20 +165,17 @@
 		16FC60BE1DC6AC8D00FD0A36 /* aniradime */ = {
 			isa = PBXGroup;
 			children = (
-				1616A6CA1DCDDDF100ECBFDF /* NendAd */,
+				1616A7371DCE244C00ECBFDF /* vendors */,
+				1616A7281DCE242200ECBFDF /* models */,
+				1616A72B1DCE242200ECBFDF /* views */,
+				1616A7231DCE22AB00ECBFDF /* viewcontrollers */,
 				1616A6D81DCDDDF100ECBFDF /* NendAd-Bridging-Header.h */,
 				1616A6E11DCDE06800ECBFDF /* Constant.swift */,
 				16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */,
-				16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */,
-				16636DB61DCC7D5C00E9210F /* SettingsViewController.swift */,
-				161C6B351DC6C80A007BACC6 /* Feed.swift */,
-				164573361DC6CC6F003B5E74 /* FeedModel.swift */,
-				164573381DC6F151003B5E74 /* RadioCell.swift */,
-				16636DB81DCDA9A100E9210F /* LicenseCell.swift */,
 				16FC60CB1DC6AC8D00FD0A36 /* Info.plist */,
-				1645733A1DC73983003B5E74 /* Assets.xcassets */,
 				16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */,
 				16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */,
+				1645733A1DC73983003B5E74 /* Assets.xcassets */,
 			);
 			path = aniradime;
 			sourceTree = "<group>";
@@ -229,7 +261,7 @@
 				16FC60CA1DC6AC8D00FD0A36 /* LaunchScreen.storyboard in Resources */,
 				1645733B1DC73983003B5E74 /* Assets.xcassets in Resources */,
 				16FC60C51DC6AC8D00FD0A36 /* Main.storyboard in Resources */,
-				1616A6DA1DCDDDF100ECBFDF /* NADView_readme.txt in Resources */,
+				1616A7471DCE244C00ECBFDF /* NADView_readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16FC60C21DC6AC8D00FD0A36 /* FeedViewController.swift in Sources */,
 				16FC60C01DC6AC8D00FD0A36 /* AppDelegate.swift in Sources */,
-				164573391DC6F151003B5E74 /* RadioCell.swift in Sources */,
+				1616A7311DCE242200ECBFDF /* RadioCell.swift in Sources */,
+				1616A72F1DCE242200ECBFDF /* FeedModel.swift in Sources */,
+				1616A72E1DCE242200ECBFDF /* Feed.swift in Sources */,
 				1616A6E21DCDE06800ECBFDF /* Constant.swift in Sources */,
-				161C6B361DC6C80A007BACC6 /* Feed.swift in Sources */,
-				16636DB91DCDA9A100E9210F /* LicenseCell.swift in Sources */,
-				164573371DC6CC6F003B5E74 /* FeedModel.swift in Sources */,
-				16636DB71DCC7D5C00E9210F /* SettingsViewController.swift in Sources */,
+				1616A7301DCE242200ECBFDF /* LicenseCell.swift in Sources */,
+				1616A7261DCE22AB00ECBFDF /* FeedViewController.swift in Sources */,
+				1616A7271DCE22AB00ECBFDF /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +459,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aniradime/NendAd",
+					"$(PROJECT_DIR)/aniradime/vendors/NendAd",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -464,6 +497,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aniradime/NendAd",
+					"$(PROJECT_DIR)/aniradime/vendors/NendAd",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
