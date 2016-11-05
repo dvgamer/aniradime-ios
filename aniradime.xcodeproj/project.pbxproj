@@ -130,20 +130,20 @@
 		16FC60BE1DC6AC8D00FD0A36 /* aniradime */ = {
 			isa = PBXGroup;
 			children = (
-				1645733A1DC73983003B5E74 /* Assets.xcassets */,
+				1616A6CA1DCDDDF100ECBFDF /* NendAd */,
+				1616A6D81DCDDDF100ECBFDF /* NendAd-Bridging-Header.h */,
+				1616A6E11DCDE06800ECBFDF /* Constant.swift */,
 				16FC60BF1DC6AC8D00FD0A36 /* AppDelegate.swift */,
 				16FC60C11DC6AC8D00FD0A36 /* FeedViewController.swift */,
 				16636DB61DCC7D5C00E9210F /* SettingsViewController.swift */,
-				16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */,
-				16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */,
-				16FC60CB1DC6AC8D00FD0A36 /* Info.plist */,
 				161C6B351DC6C80A007BACC6 /* Feed.swift */,
 				164573361DC6CC6F003B5E74 /* FeedModel.swift */,
 				164573381DC6F151003B5E74 /* RadioCell.swift */,
 				16636DB81DCDA9A100E9210F /* LicenseCell.swift */,
-				1616A6CA1DCDDDF100ECBFDF /* NendAd */,
-				1616A6D81DCDDDF100ECBFDF /* NendAd-Bridging-Header.h */,
-				1616A6E11DCDE06800ECBFDF /* Constant.swift */,
+				16FC60CB1DC6AC8D00FD0A36 /* Info.plist */,
+				1645733A1DC73983003B5E74 /* Assets.xcassets */,
+				16FC60C31DC6AC8D00FD0A36 /* Main.storyboard */,
+				16FC60C81DC6AC8D00FD0A36 /* LaunchScreen.storyboard */,
 			);
 			path = aniradime;
 			sourceTree = "<group>";
