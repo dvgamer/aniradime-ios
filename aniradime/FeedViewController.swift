@@ -37,6 +37,9 @@ class FeedViewController: UITableViewController, NADViewDelegate {
         self.nadView.load()
         self.nadView.delegate = self
         self.navigationController?.view.addSubview(self.nadView)
+        
+        self.tableView.contentInset = UIEdgeInsetsMake(0.0, 0.0, 50.0, 0.0)
+        self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0.0, 0.0, 50.0, 0.0)
 
         fetch(isFirstPage: true)
     }
