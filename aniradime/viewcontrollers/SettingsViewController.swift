@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class SettingsViewController: UITableViewController {
 
@@ -64,7 +65,7 @@ class SettingsViewController: UITableViewController {
                 cell.detailTextLabel?.text = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String?
             default:
                 cell.textLabel?.text = "Developed by"
-                cell.detailTextLabel?.text = "@rakuishi07"
+                cell.detailTextLabel?.text = "rakuishi"
             }
             return cell
         default:
@@ -77,8 +78,9 @@ class SettingsViewController: UITableViewController {
         switch indexPath.section {
         case 0:
             if indexPath.row == 1 {
-                let options = [UIApplicationOpenURLOptionUniversalLinksOnly : false]
-                UIApplication.shared.open(URL.init(string: "https://twitter.com/rakuishi07")!, options: options, completionHandler: nil)
+                let url = URL(string: "http://rakuishi.com")
+                let viewController = SFSafariViewController(url: url!)
+                present(viewController, animated: true)
             }
         default:
             break

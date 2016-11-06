@@ -110,8 +110,8 @@
 		1616A72B1DCE242200ECBFDF /* views */ = {
 			isa = PBXGroup;
 			children = (
-				1616A72D1DCE242200ECBFDF /* RadioCell.swift */,
 				1616A72C1DCE242200ECBFDF /* LicenseCell.swift */,
+				1616A72D1DCE242200ECBFDF /* RadioCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
