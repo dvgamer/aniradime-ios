@@ -25,63 +25,43 @@ class SettingsViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 2
-        default:
-            return 1
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            return "About aniradime"
-        default:
-            return "3rd Party Licenses"
-        }
+        return 3
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.section {
-        case 0:
-            return 44.0
-        default:
-            return 150.0
-        }
+        return 44.0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell", for: indexPath)
+        switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell", for: indexPath)
-            switch indexPath.row {
-            case 0:
-                cell.textLabel?.text = "Version"
-                cell.detailTextLabel?.text = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String?
-            default:
-                cell.textLabel?.text = "Developed by"
-                cell.detailTextLabel?.text = "rakuishi"
-            }
-            return cell
+            cell.textLabel?.text = "Version"
+            cell.detailTextLabel?.text = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String?
+        case 1:
+            cell.textLabel?.text = "Developed by"
+            cell.detailTextLabel?.text = "rakuishi"
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "LisenceCell", for: indexPath) as! LicenseCell
-            return cell
+            cell.textLabel?.text = "3rd Party Licenses"
+            cell.detailTextLabel?.text = ""
         }
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.section {
-        case 0:
-            if indexPath.row == 1 {
-                let url = URL(string: "http://rakuishi.com")
-                let viewController = SFSafariViewController(url: url!)
-                present(viewController, animated: true)
-            }
+        switch indexPath.row {
+        case 1:
+            let url = URL(string: "http://rakuishi.com")
+            let viewController = SFSafariViewController(url: url!)
+            present(viewController, animated: true)
+        case 2:
+            let url = URL(string: "https://github.com/rakuishi/aniradime-ios/blob/master/ATTRIBUTIONS.md")
+            let viewController = SFSafariViewController(url: url!)
+            present(viewController, animated: true)
         default:
             break
         }
