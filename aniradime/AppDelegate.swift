@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NetworkActivityIndicatorManager.shared.startDelay = 0.0
         NetworkActivityIndicatorManager.shared.completionDelay = 0.2
 
+        /*
         let session = AVAudioSession.sharedInstance()
         do {
             try session.setCategory(AVAudioSessionCategoryPlayback)
@@ -34,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print("Something is wrong about activating AVAudioSession.")
         }
+        */
         
         return true
     }
